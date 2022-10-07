@@ -334,7 +334,7 @@ header .container {
 
 /* Features......  */
 .features {
-  padding: 120px 0;
+  padding: 100px 0 50px;
   text-align: center;
 }
 
@@ -376,7 +376,7 @@ header .container {
 /* Cta ........ */
 
 .cta {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .cta-card {
@@ -470,7 +470,7 @@ footer {
 }
 
 .footer-top {
-  padding: 80px 0 50px;
+  padding: 0 0 50px;
 }
 
 .footer-brand {
@@ -540,6 +540,37 @@ footer .logo {
 
 .copyright a:is(:hover, :focus) {
   color: var(--french-rose);
+}
+
+/* Go To Top..... */
+.go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    -45deg,
+    var(--maximum-yellow-red),
+    var(--french-rose)
+  );
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.25);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 22px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.go-top.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 /* Responsive  */
