@@ -410,6 +410,54 @@ header .container {
   margin-inline: auto;
 }
 
+/* contact ..... */
+.contact {
+  margin-bottom: 120px;
+}
+
+.contact-content {
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  color: var(--royal-blue-dark);
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: var(--fw-500) !important;
+}
+
+.contact-banner img {
+  width: 100%;
+}
+
+.input-wrapper {
+  margin-bottom: 30px;
+}
+
+.input-label {
+  color: var(--oxford-blue);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  margin-bottom: 10px;
+}
+
+.input-field {
+  border-bottom: 1px solid var(--platinum);
+  padding: 7px 0;
+  font-size: var(--fs-6);
+}
+
+.input-field::placeholder {
+  color: var(--silver-chalice);
+}
+
+textarea {
+  max-height: 300px;
+  min-height: 100px;
+  height: 100px;
+  resize: vertical;
+}
+
 /* Responsive  */
 @media (min-width: 450px) {
   :root {
@@ -475,6 +523,15 @@ header .container {
   .cta .btn-secondary {
     min-width: max-content;
   }
+
+  .contact-title {
+    --fs-2: 32px;
+  }
+
+  .contact-banner {
+    max-width: 300px;
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 560px) {
@@ -529,6 +586,10 @@ header .container {
 
   .about-card .card-title {
     padding-inline: 0;
+  }
+
+  .contact-title {
+    --fs-2: 42px;
   }
 }
 
@@ -637,6 +698,25 @@ header .container {
   .cta-card > * {
     max-width: 500px;
     margin-inline: auto;
+  }
+
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .contact-content {
+    max-width: 400px;
+  }
+
+  .contact-title {
+    text-align: left;
+  }
+
+  .contact-form {
+    width: 50%;
   }
 }
 
